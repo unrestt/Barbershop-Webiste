@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --color-brown: rgb(221, 199, 167);
+    --color-brown-darker: rgb(160, 144, 121);
+    --color-brown-darker-transparent: rgba(214,193,162, 0.8);
+    --color-brown-transparent: rgba(221, 199, 167, 0.8);
+    --color-brown-darkest: rgb(100, 90, 75);
+    --color-brown-darkest-hover: rgb(66, 60, 50);
+} 
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+    text-decoration: none;
+    list-style-type: none;
+}
+.top-section{
+    width: 100%;
+    background-image: url('../images/barber-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+section:not(#banner-section) {
+    background-color: #f5f5f5;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.section-heading{
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+.first-heading{
+    padding-bottom: 0;
+}
+.to-top {
+    background-color: var(--color-brown-darkest);
+    z-index: 10000;
+    position: fixed;
+    bottom: 16px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .to-top.active{
+    bottom: 18px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .to-top:hover{
+    background-color: var(--color-brown-darkest-hover);
+  }

@@ -1,0 +1,43 @@
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); /* nowy cień */
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* cień przy hoverze */
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}

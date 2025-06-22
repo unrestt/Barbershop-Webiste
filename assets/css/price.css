@@ -1,0 +1,32 @@
+#price-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price-table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 700px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.price-table thead {
+    background-color: var(--color-brown-darker);
+    color: white;
+}
+
+.price-table th,
+.price-table td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

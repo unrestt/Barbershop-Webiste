@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/infobox.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/price.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/location.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+</head>
+<body>
+    <div class="top-section" id="home">
+        <header>
+            <div class="container">
+                <img src="assets/images/logo-test.png" alt="logo">
+             
+                <nav>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul id="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-section">O nas</a></li>
+                        <li><a href="#price-section">Cennik</a></li>
+                        <li><a href="#gallery-section">Galeria</a></li>
+                        <li><a href="#team-section">Kadra</a></li>
+                        <li><a href="#location-section">Lokalizacja</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <section id="banner-section">
+            <div class="container">
+                <h1>Tekst nagłówkowy</h1>
+            </div>
+        </section>
+    </div>
+    <section id="infobox-section">
+        <div class="container">
+            <div class="infobox">
+                <div class="info">
+                    <div class="top-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h2>Adres</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bottom-info">
+                        <p>Ulica 123, Warszawa</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="top-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <h2>Nr telefonu</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bottom-info">
+                        <p><b>(+48) 123 456 789</b></p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="top-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <h2>Godziny</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="bottom-info">
+                        <p>PON-PT: 9-21 SOB: 9-18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="left-about">
+                    <h1 class="section-heading first-heading">O nas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus fugit magni sed facere nobis inventore aliquam incidunt animi in sequi nesciunt expedita tenetur obcaecati, quidem iste doloremque quas. Possimus, tempore?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam porro odit corporis aperiam inventore aliquid perspiciatis numquam rem dicta ea accusamus molestias, nisi nostrum nulla eaque quae enim pariatur itaque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ex consequatur optio ut sequi, quas impedit dolore! Quasi possimus dolor reiciendis quae velit tenetur ducimus! Tempore praesentium enim cumque dicta?</p>
+                    <div class="bottom-left-about">
+                        <div class="additional">
+                            <h2>99 <span>%</span></h2>
+                            <h3>ZADOWOLONYCH<br>KLIENTÓW</h3>
+                        </div>
+                        <div class="additional">
+                            <h2>10 <span>+</span></h2>
+                            <h3>LAT<br>DOŚWIADCZENIA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <img src="assets/images/about.png" alt="about">
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    <section id="price-section">
+        <div class="container">
+            <h1 class="section-heading">Cennik usług</h1>
+            <table class="price-table">
+                <thead>
+                <tr>
+                    <th>Usługa</th>
+                    <th>Cena</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Strzyżenie męskie</td>
+                    <td>45 zł</td>
+                </tr>
+                <tr>
+                    <td>Strzyżenie damskie</td>
+                    <td>100 zł</td>
+                </tr>
+                <tr>
+                    <td>Farbowanie</td>
+                    <td>100 zł</td>
+                </tr>
+                <tr>
+                    <td>Modelowanie</td>
+                    <td>60 zł</td>
+                </tr>
+                <tr>
+                    <td>Stylizacja okolicznościowa</td>
+                    <td>120 zł</td>
+                </tr>
+                <tr>
+                    <td>Regeneracja włosów</td>
+                    <td>80 zł</td>
+                </tr>
+                <tr>
+                    <td>Strzyżenie dziecięce</td>
+                    <td>35 zł</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="gallery-section">
+        <div class="container">
+            <h2 class="section-heading">Galeria</h2>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <a href="assets/images/gallery/image1.png" class="glightbox">
+                        <img src="assets/images/gallery/image1.png" alt="Galeria 1" />
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="assets/images/gallery/image2.png" class="glightbox">
+                        <img src="assets/images/gallery/image2.png" alt="Galeria 2" />
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="assets/images/gallery/image3.png" class="glightbox">
+                        <img src="assets/images/gallery/image3.png" alt="Galeria 3" />
+                    </a>
+                    </div>
+                     <div class="swiper-slide">
+                    <a href="assets/images/gallery/image4.png" class="glightbox">
+                        <img src="assets/images/gallery/image4.png" alt="Galeria 3" />
+                    </a>
+                    </div>
+                     <div class="swiper-slide">
+                    <a href="assets/images/gallery/image5.png" class="glightbox">
+                        <img src="assets/images/gallery/image5.png" alt="Galeria 3" />
+                    </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Paginations (kropki) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section id="team-section">
+        <div class="container">
+            <h1 class="section-heading">Kadra</h1>
+            <div class="team-flex">
+                <div class="team-member">
+                    <img src="assets/images/team/team1.png" alt="Anna Kowalska" />
+                    <h3>Maciej Kowalski</h3>
+                    <p>Specjalista od nowoczesnych cięć i koloryzacji z 10-letnim doświadczeniem.</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team/team2.png" alt="Tomasz Nowak" />
+                    <h3>Tomasz Nowak</h3>
+                    <p>Mistrz stylizacji męskiej – klasyczne cięcia i nowoczesne fade'y.</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team/team3.png" alt="Julia Wiśniewska" />
+                    <h3>Andrzej Kronik</h3>
+                    <p>Artystka koloru – od pastelowych blondów po odważne czerwienie.</p>
+                </div>
+                </div>
+        </div>
+    </section>
+    <section id="location-section">
+        <div class="container">
+            <h1 class="section-heading">Lokalizacja</h1>
+           <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3173.9063074230908!2d21.008049771013663!3d52.23080074625707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1750612154925!5m2!1spl!2spl" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+             <div class="footer-containers">
+                <div class="footer-container">
+                    <h3>Menu</h3>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">Sekcja 1</a>
+                        <a href="#">Sekcja 2</a>
+                        <a href="#y">Sekcja 3</a>
+                        <a href="#">Kontakt</a>
+                    </div>
+               
+                </div>
+                <div class="footer-container">
+                    <h3>Pomoc</h3>
+                    <div class="footer-links">        
+                        <a href="assets/Regulamin.pdf" target="_blank">Regulamin strony</a>
+                        <a href="assets/PolitykaPrywatnosci.pdf" target="_blank">Polityka prywatności</a>
+                    </div>
+              
+                </div>
+                <div class="footer-container" id="footer-container-3">
+                    <h3>Kontakt</h3>
+                    <div class="footer-links" id="contact-footer">
+                            <div class="contact-option">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>(+48) 123 456 789</p>
+                            </div>
+                            <div class="contact-option">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>emailfirmy@firma.com</p>
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-container">
+                    <h3>Info</h3>
+                    <div class="footer-links">
+                        <div class="below-footer-last">
+                        
+                            <p>&copy; Nazwa Firmy<br>
+                                Wszelkie prawa zastrzeżone</p>
+                            <p>Wykonanie: <a href="https://www.facebook.com/bartek.kutnik.77/" target="_blank">Bartosz Kutnik</a></p>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+            const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 30,
+            loop: true,
+            grabCursor: true,
+            initialSlide: 1,
+
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/70f2470b08.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/totop.js"></script>
+    <script src="assets/javascript/nav.js"></script>
+</body>
+</html>
