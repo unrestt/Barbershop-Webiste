@@ -18,3 +18,8 @@
         font-size: 45px;
     }
 }
+@media (max-width: 450px){
+    #banner-section h1{
+        font-size: 35px;
+    }
+}

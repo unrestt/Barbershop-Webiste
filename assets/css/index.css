@@ -69,11 +69,21 @@ section:not(#banner-section) {
     pointer-events: none;
     transition: all .4s;
   }
-  .to-top.active{
+.to-top.active{
     bottom: 18px;
     pointer-events: auto;
     opacity: 1;
-  }
-  .to-top:hover{
+}
+.to-top:hover{
     background-color: var(--color-brown-darkest-hover);
-  }
+}
+@media (max-width: 550px){
+    .section-heading{
+        font-size: 40px;
+    }
+}
+@media (max-width: 400px){
+    .section-heading{
+        font-size: 30px;
+    }
+}
